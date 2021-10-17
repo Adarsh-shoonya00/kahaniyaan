@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background:  linear-gradient(80deg,rgb(27, 122, 118),rgba(117, 19, 93, 0.73));
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+  opacity: 0.7;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 300px;
+  }
+}

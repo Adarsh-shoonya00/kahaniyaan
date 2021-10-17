@@ -1,0 +1,24 @@
+extends base.pug
+
+block scripts
+  script(src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js')
+block style 
+    style
+        include ../static/style.css
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        include ../static/upcoming.css
+
+
+
+
+block content 
+  h1 Our upcoming events
+  .carousel(data-flickity='{ "imagesLoaded": true, "percentPosition": false }')
+    img(src='/static/img/upcoming1.jpg', alt='orange tree')
+    img(src='/static/img/upcoming2.jpg ',alt='submerged')
+    img(src='/static/img/upcoming3.png',alt='look-out')
+    img(src='/static/img/upcoming4.jpg', alt='One World Trade')
+    img(src='/static/img/upcoming5.jpg',alt='drizzle')
+    img(src='/static/img/upcoming6.jpg',alt='cat nose')
+
+  

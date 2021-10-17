@@ -1,0 +1,55 @@
+extends base.pug
+
+block scripts
+ 
+block style 
+    style
+        include ../static/style.css
+
+block content     
+    section#introSection
+        div Welcome to Kahaaniyan
+        div.small Stories = Memories and Procastination.
+    section#missionSection
+        h2 Features
+        div.cardcontainer
+            div.card
+                h3 Shayari
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/shayari.png")
+                    div.wrap
+                        div.card-content
+                            p Suno Sunao mahaul banao
+                        div.more
+                            a(href='/') know more     
+
+            div.card
+                h3 Story Telling.
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/story.png")
+                    div.wrap
+                        div.card-content
+                            p Stories Of our creative Youth.
+                        div.more
+                            a(href='/') know more    
+
+            div.card
+                h3 Shabdarth.
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/shabdarth.jpg")
+
+                    div.wrap
+                        div.card-content
+                            p Having difficulty in understanding? Search for the word.
+                        div.more
+                            a(href='/') know more    
+    section#sponsorsSection
+        h2 Our Sponsors
+        div.sponsor
+          img(src= '/', alt= 'Sponsor Image',class='sponsorlogo')
+          img(src= '/', alt= 'Sponsor Image',class='sponsorlogo')
+          img(src= '/', alt= 'Sponsor Image',class='sponsorlogo')
+          img(src= '/', alt= 'Sponsor Image',class='sponsorlogo')    

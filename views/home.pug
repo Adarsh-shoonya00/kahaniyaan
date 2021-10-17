@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title artify
+    style
+      include ../static/style.css
+
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/mylogo.png")
+                | AFY
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/upcoming") Upcoming events]
+            li #[a(href="/contact") Contact Us]    
+    section#introSection
+        div good stories = good Memories
+        div.small Talent meets Opportunity
+    section#missionSection
+        h2 Our Mission
+        div.cardcontainer
+            div.card
+                h3 Poems
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/2.png")
+                    div.card-content
+                        p Quality poems from our contributors
+
+            div.card
+                h3 Shayari
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/2.png")
+                    div.card-content
+                        p Suno Sunao.
+
+            div.card
+                h3 Story Telling
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/2.png")
+
+                    div.card-content
+                        p Wanna hear good stories?
+    section#sponsorsSection
+        h2 Our Sponsors
+        div.sponsor
+          img(src= '/static/img/img1.png', alt= 'Sponsor Image',class='sponsorlogo')
+          img(src= '/static/img/img2.png', alt= 'Sponsor Image',class='sponsorlogo')
+          img(src= '/static/img/img3.jpg', alt= 'Sponsor Image',class='sponsorlogo')
+          img(src= '/static/img/img4.png', alt= 'Sponsor Image',class='sponsorlogo')
+    footer#footer
+        | Copyright © 2019 raj21adarsh@gmail.com | All Rights Reserved
